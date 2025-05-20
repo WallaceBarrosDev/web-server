@@ -1,7 +1,7 @@
-import express, { Response } from 'express';
+import express, { Request, Response } from 'express';
 const app = express();
 
-app.get('/', (_, res: Response) => {
+app.get('/', (_req: Request, res: Response) => {
     res.json({message: 'Hello World!'});
 })
 
